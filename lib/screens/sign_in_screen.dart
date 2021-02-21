@@ -4,8 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignInScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
+  @override Widget build(BuildContext context) {
     final widht = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return AnnotatedRegion<SystemUiOverlayStyle>(

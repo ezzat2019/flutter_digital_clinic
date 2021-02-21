@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        appBarTheme:AppBarTheme(
+        color: Colors.blue) ,
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -49,13 +51,15 @@ class _MyHomePageState extends State<MyHomePage> {
             } else {
               return WelcomeScreen();
             }
-          } else if (snapshot.connectionState == ConnectionState.waiting) {
+          }
+          else if (snapshot.connectionState==ConnectionState.waiting) {
             return Center(
               child: SpinKitRotatingCircle(
                 color: Colors.lightBlueAccent,
                 size: 50.0,
               ),
             );
+
           }
         },
       ),
